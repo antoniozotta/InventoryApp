@@ -10,8 +10,14 @@ public class BookDbHelper extends SQLiteOpenHelper {
 
     public static final String LOG_TAG = BookDbHelper.class.getSimpleName();
 
+    /**
+     * Name of the database file
+     */
     private static final String DATABASE_NAME = "books.db";
 
+    /**
+     * Database version - Increment if database schema is changed
+     */
     private static final int DATABASE_VERSION = 1;
 
     /**
@@ -26,7 +32,6 @@ public class BookDbHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase db) {
-
         // Create a String containing SQL statement to create books table
         String SQL_CREATE_BOOKS_TABLE = "CREATE TABLE "
                 + BookEntry.TABLE_NAME + " ("
@@ -42,7 +47,7 @@ public class BookDbHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion1) {
 
     }
 }

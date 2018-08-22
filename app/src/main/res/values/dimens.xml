@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="activity_margin">16dp</dimen>
-
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="sale_icon">36dp</dimen>
+    <dimen name="med_dimen">16dp</dimen>
+    <dimen name="small_dimen">8dp</dimen>
+    <dimen name="edit_quantity_buttons">24dp</dimen>
 </resources>

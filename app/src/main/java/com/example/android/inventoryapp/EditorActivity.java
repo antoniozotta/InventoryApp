@@ -229,6 +229,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 Toast.makeText(this, getString(R.string.insert_book_successful),
                         Toast.LENGTH_SHORT).show();
             }
+            finish();
         } else {
             // Otherwise this is an EXISTING book, so update the book with content URI: mCurrentBookUri
             // and pass in the new ContentValues. Pass in null for the selection and selection args
@@ -246,6 +247,7 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
                 Toast.makeText(this, getString(R.string.editor_update_book_successful),
                         Toast.LENGTH_SHORT).show();
             }
+            finish();
         }
     }
     @Override
@@ -279,8 +281,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             case R.id.action_save:
                 // Save book to database
                 saveBook();
-                // Exit activity
-                finish();
                 return true;
             // Respond to a click on the "Delete" menu option
             case R.id.action_delete:

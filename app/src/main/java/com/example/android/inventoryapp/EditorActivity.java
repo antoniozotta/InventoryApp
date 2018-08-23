@@ -182,7 +182,6 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             Toast.makeText(this, R.string.title_empty, Toast.LENGTH_SHORT).show();
             return;
         }
-        //Make sure quantity is a positive integer
         String priceString = mPriceEditText.getText().toString().trim();
         if (TextUtils.isEmpty(priceString)) {
             Toast.makeText(this, R.string.price_empty, Toast.LENGTH_SHORT).show();
